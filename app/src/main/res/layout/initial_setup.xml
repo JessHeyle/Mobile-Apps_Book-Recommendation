@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Jessica Heyle - R00131139-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_initialactivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's start with an estimated reading speed.
+Follow the below link and take the speed test.
+Come back here to enter the results afterwards.
+We will monitor your reading speed as we go."
+        />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="
+www.readingsoft.com"/>
+
+    <TextView
+        android:id="@+id/tv_readingspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Enter the result of your reading speed test:" />
+
+    <EditText
+        android:id="@+id/edit_result"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">What will I read?</string>
+    <string name="messageWithLink">\n<a href="https://www.google.com/">Tap here to open the reading speed test!</a></string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update your progress on your current book:"
+        android:id="@+id/tv_intro"
+        android:layout_marginTop="30px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:id="@+id/tv_finished"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Have you finished the book?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_recommendations"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro"
+        android:layout_marginTop="40px"
+        android:textColor="@android:color/black"
+        />
+    <Spinner
+        android:id="@+id/spinner_finished"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40px"
+        app:layout_constraintLeft_toRightOf="@+id/tv_finished"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/tv_pause"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Would you like to pause reading this book?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spinner_pause"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_finished"
+        android:layout_marginTop="40px"
+        android:visibility="invisible"
+        android:textColor="@android:color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_pause"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50px"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pause"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_finished"
+        android:visibility="invisible"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_pause"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40px"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
+
+
+</android.support.constraint.ConstraintLayout>

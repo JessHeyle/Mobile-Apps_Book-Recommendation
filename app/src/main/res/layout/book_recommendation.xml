@@ -1,0 +1,33 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/rl"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+tools:context=".MainActivity"
+android:background="#e8d25b"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d5daff"
+        android:padding="5dp"
+        android:text="Choose which book to read."
+        android:textColor="#5f65ff"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/lv_recommendations"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"></ListView>
+
+    <Button android:id="@+id/btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Reading!"/>
+</LinearLayout>
